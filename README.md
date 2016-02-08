@@ -1,0 +1,1 @@
+An essay I wrote on web frameworks for a statistics course. It briefly covers the history of webframeworks, the evolution of HTTP. From the first usage of "the xml http thing" to websockets, the essay touches on many topics.
