@@ -43,6 +43,8 @@ There are other aspects of web frameworks, such as testing, caching, routing req
 
 A web framework routes HTTP requests to actions based on sessions data and data it receives from a database. In the Web 2.0 era and beyond, web servers have grown to support dynamic HTTP requests from technologies such as Ajax and websockets. Since the Web 1.0 era, Static content has been offloaded to CDN’s, Database support has been built into the frameworks, and dynamic updates with javascript have become consumer requirements. As discussed earlier, web frameworks have to overcome a lot of difficulties in order to meet the demands of Web 2.0 era.
 
+**Web Frameworks**
+
 PHP was originally named Personal Home Page [(15)] [15]. Created in the mid to late 90’s, PHP was developed when much of the web was static web pages. Ajax and websockets were around, but no one implemented them. PHP was originally written to create a dynamic personal home page. Today it powers websites such as Facebook, Wikipedia, Flickr, and WordPress.com, among others [(17)] [17]. PHP is an easy language to learn because of it’s simple syntax. [BuiltWith.com] [builtwith] lists PHP with 40% of the current web framework market share, exceeding every other web framework [(18)] [18]. Much of PHP’s market share comes from tools, such as wordpress, that allow anyone to build a PHP website with minimal programming skills.
 
 Rails was developed to alleviate some of the development problems associated with Web Frameworks. Rails introduced the principles of “Convention over Configuration” (CoC) and “Don’t Repeat Yourself” (DRY) to make rapid web development possible [(19)] [19]. CoC means developers rely on standard conventions instead of rewriting boilerplate code every time they need to build a new feature. Once a developer is acquainted with these conventions, he or she can quickly develop features with clear standards, hence the name ‘Rails’. DRY means developers should attempt to duplicate as little code as possible - features in Rails, such as Concerns, Gems, and ERB templates encourage this principle. According to [BuiltWith.com] [builtwith], Rails has about 1% of the current web framework market share.
@@ -55,7 +57,9 @@ It’s difficult to directly contrast web frameworks without resorting to opinio
 
 If there is anything this paper has stressed, it has been the growth of technologies surrounding and the many complexities involved with web development. When choosing a web framework, performance is typically the last thing one ought to consider. Changing frameworks is nearly impossible, but changing databases or how your API works can be simpler in one framework than another. Granted, if a project involves dealing with time critical data, web frameworks are most likely not even going to be considered. But if you were interested in choosing the fastest framework, the statistical analysis that follows should help you decide between Rails and PHP.
 
-However, the original intentions for this assignment was to statistically compare the web frameworks. Meteor, with its dependence on using websockets and MongoDB, is difficult to compare to PHP and/or Rails. However, PHP and Rails are compared all the time. Collecting the data did not take very long.
+However, the original intentions for this assignment was to statistically compare the web frameworks. Meteor, with its dependence on using websockets and MongoDB, is difficult to compare to PHP and/or Rails. However, PHP and Rails are compared all the time.
+
+**Rails and PHP statistical comparison**
 
 The First Null Hypothesis is that there is a statistically significant difference in latency between PHP and Rails, when being tested with 20 queries. Our hypothesis is looking for a difference between the frameworks themselves, not the specific implementations of the frameworks. Data is from [Techempower.com] [21]. All data was collected using MySQL as the database and Linux as the operating system.
 
