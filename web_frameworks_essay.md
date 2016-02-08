@@ -20,7 +20,7 @@ Another difficulty web frameworks face is the number of requests they must simul
 
 Knowing how many page requests Facebook receives will help identify what should be expected of a web framework. Statista, a statistics aggregator, noted that “As of the third quarter of 2015, Facebook had 1.55 billion monthly active users”, or, about 20 percent of all people on earth (7.4 billion people) [(3)] [3],[(4)] [4]. The equations below describe the number of page requests Facebook receives per second:
 
-![](facebook-query-numbers.png)
+![](images/facebook-query-numbers.png)
 
 These equations, although approximate, demonstrate that Facebook is receiving on average at least 600 requests per second. This equation is highly dependent on the average number of requests per user per month - a quantity that must be greater than one because we are using active users. However, this is only an estimate of the initial GET request.
 Content that dynamically updates in your browser, such as a stock market ticker or a twitter feed, uses javascript to make GET requests to the server for more information.
@@ -63,7 +63,7 @@ The First Null Hypothesis is that there is a statistically significant differenc
 
 Even though we are given the standard deviation data, the T-distribution will be used to determine if there is a difference in latency. It was chosen because the sample sizes are quite small.
 
-![](latency-by-framework.png)
+![](images/latency-by-framework.png)
 
 | Framework |   Mean   | SD      | N |
 |-----------|:--------:|---------|---|
@@ -73,7 +73,7 @@ Even though we are given the standard deviation data, the T-distribution will be
 With t = 1.4103, and df = 8, the p-value was 0.1961. This p-value is too large to show a statistically significant result. Therefore the First Null Hypothesis must be Rejected. The difference in latency between Rails and PHP is not statistically significant.
 The Second Null Hypothesis is that there is a statistically significant difference in Responses Per Second (RPS) between PHP and Rails, when being tested with twenty queries. The data from Techempower.com shows this as ‘Performance’, but it represents the number of requests the server can respond to in a second. The 20 requests being made are GET requests.
 
-![](rps-by-framework.png)
+![](images/rps-by-framework.png)
 
 | Framework |   Mean  | SD          | N |
 |-----------|:-------:|-------------|---|
@@ -84,7 +84,7 @@ With t = 7.25, and df = 8, the p-value was 0.000044. Because the p-value < 0.5, 
 
 Below is a chart of the responses per second at the Nth query. It’s fairly clear that the PHP implementation performs better than the Rails implementations. In fact, the better performing PHP implementation was off the charts - the other implementations could not be seen.
 
-![](rps-on-nth-query.png)
+![](images/rps-on-nth-query.png)
 
 Modern web frameworks are very complicated. As this project has hopefully shown, it is very difficult to compare web frameworks. The sheer number of responsibilities and tasks a single framework must be able to perform is staggering. However, it is now statistically proven (under these very specific conditions) that PHP has an edge over Rails when it comes to RPS.
 
