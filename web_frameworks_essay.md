@@ -1,6 +1,4 @@
-PHP & Ruby on Rails:
-=============
-A Statistical Comparison of Modern Web Frameworks
+PHP & Ruby on Rails: Web Frameworks
 =============
 
 **Introduction**
