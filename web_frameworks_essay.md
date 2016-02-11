@@ -55,8 +55,6 @@ It’s difficult to directly contrast web frameworks without resorting to opinio
 
 If there is anything this paper has stressed, it has been the growth of technologies surrounding and the many complexities involved with web development. When choosing a web framework, **performance is typically the last thing one ought to consider**. Changing frameworks is nearly impossible, but changing databases or how your API works can be simpler in one framework than another. Granted, if a project involves dealing with time critical data, web frameworks are most likely not even going to be considered. But if you were interested in choosing the fastest framework, the statistical analysis that follows should help you decide between Rails and PHP.
 
-However, the original intentions for this assignment was to statistically compare the web frameworks. Meteor, with its dependence on using websockets and MongoDB, is difficult to compare to PHP and/or Rails. However, PHP and Rails are compared all the time.
-
 **Rails and PHP statistical comparison**
 
 The First Null Hypothesis is that there is a statistically significant difference in latency between PHP and Rails, when being tested with 20 queries. Our hypothesis is looking for a difference between the frameworks themselves, not the specific implementations of the frameworks. Data is from [Techempower.com] [21]. All data was collected using MySQL as the database and Linux as the operating system.
